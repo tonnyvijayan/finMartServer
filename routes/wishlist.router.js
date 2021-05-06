@@ -60,7 +60,7 @@ router
   .route("/:wishListId")
   .get((req, res) => {
     const item = req.product;
-    console.log({ item });
+
     res.json({ success: true, wishListItem: item.productId });
   })
 
